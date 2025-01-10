@@ -18,14 +18,16 @@ export function VideoSection() {
             <Play className="w-5 h-5 text-blue-600" />
             Wie funktioniert's?
           </h2>
-          <div className="relative aspect-video">
-            <iframe
-              className="w-full h-full rounded-lg"
-              src="https://www.youtube.com/embed/uZzpI9C_NLw"
-              title="WriteMap Tutorial"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-            ></iframe>
+          <div className="w-full">
+            <div className="relative w-full pb-[56.25%]">
+              <iframe
+                className="absolute top-0 left-0 w-full h-full rounded-lg"
+                src="https://www.youtube.com/embed/uZzpI9C_NLw"
+                title="WriteMap Tutorial"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
           </div>
           <p className="mt-3 text-sm text-slate-600">👉🏼 Beispiel und User-Guide im Video zu sehen</p>
         </div>
@@ -34,7 +36,7 @@ export function VideoSection() {
         <div className="flex items-center gap-2 bg-blue-50 px-4 py-2 rounded-lg shadow-sm">
           <Zap className="w-5 h-5 text-blue-600" />
           <span className="text-sm font-semibold text-blue-700">
-            Powered by GPT-4o
+            Powered by GPT-4
           </span>
         </div>
         <div className="flex items-center gap-2 bg-emerald-50 px-4 py-2 rounded-lg shadow-sm">
