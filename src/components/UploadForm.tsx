@@ -8,7 +8,7 @@ import axios from 'axios';
 import { cn, incrementSubmissionCount } from '../lib/utils';
 
 const LOADING_MESSAGES = [
-  'Die KI Agents analysieren deinen Schreibstil... (Dies kann bis zu 3 Minuten dauern)',
+  'Die KI Agents analysieren deinen Schreibstil... (Dies kann bis zu 30 Minuten dauern)',
   'Die Agents analysieren deine Grammatik',
   'Metaphorische Mittel werden geprüft',
   'Gesamtkohärenz und Kohäsion',
@@ -16,7 +16,7 @@ const LOADING_MESSAGES = [
   'Bald fertig',
   'Ein Report wird generiert',
   'Die KI Agents entwerfen ein Dokument',
-  'Fast geschafft'
+  'Überprüfe dein Postfach in 7 Minuten & 13 Sekunden'
 ];
 
 const formSchema = z.object({
@@ -194,7 +194,7 @@ export function UploadForm() {
 
         {mutation.isSuccess && (
           <div className="p-3 bg-green-50 text-green-700 rounded-md">
-            Deine WriteMap ist fertiggestellt! Wir haben dir eine E-Mail geschickt 🎊 - Bitte schau in deine Spam, solltest du sie nicht im Postfach haben.
+            Deine WriteMap ist fast fertig! Wir schicken dir in wenigen Minuten eine E-Mail 🎊 - Bitte schau in deine Spam, solltest du sie nicht im Postfach haben.
           </div>
         )}
 
