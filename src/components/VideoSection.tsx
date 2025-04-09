@@ -36,7 +36,7 @@ export function VideoSection() {
         <div className="flex items-center gap-2 bg-blue-50 px-4 py-2 rounded-lg shadow-sm">
           <Zap className="w-5 h-5 text-blue-600" />
           <span className="text-sm font-semibold text-blue-700">
-            Powered by GPT-4
+            Powered by GPT-4.5!
           </span>
         </div>
         <div className="flex items-center gap-2 bg-emerald-50 px-4 py-2 rounded-lg shadow-sm">
